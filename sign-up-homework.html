@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Destiny Web Form</title>
+</head>
+<body>
+  <header>
+    <h1>Destiny Survey</h1>
+  </header>
+  <nav>
+    <ul>
+      <li>Home</li>
+      <li>Bungie</li>
+      <li>Destiny Subreddit</li>
+      <li>Destiny Wiki</li>
+    </ul>
+  </nav>
+  <div id="content">
+    <h2>Destiny Player Survey</h2>
+    <p>If you would like to help the Destiny community grow and improve, please fill out the survey below.</p>
+    <form>
+      <fieldset>
+        <h3>Please Fill Out the Survey</h3>
+        <p>First, we'll ask some questions about how you play Destiny.</p>
+        <ul>
+          <li>
+            <label for="username">Username</label>
+            <input id="username" type="text" name="username" placeholder="username" required autofocus />
+          </li>
+          <li>
+            <label for="password">Password</label>
+            <input id="password" type="text" name="password" placeholder="password" required />
+          </li>
+          <li>
+            <label>Enter a valid email</label>
+            <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required />
+          </li>
+          <li>
+            <label>Please select the platform you play Destiny on</label>
+            <select name="platform">
+              <option>Playstation 3</option>
+              <option>Playstation 4</option>
+              <option>Xbox 360</option>
+              <option>Xbox One</option>
+            </select>
+          </li>
+          <li>
+            <label>About how many hours per week do you commit to Destiny?</label>
+            <input type="number" value="0" max="196" min="1" placeholder="?" required/>
+          </li>
+        </ul>
+        <p>Awesome! Thanks for your input so far. Now on to the good stuff. The following questions will be about your preferences regarding the actual game itself.</p>
+        <ul>
+          <li>
+            <label id="class">Of the three main classes in Destiny (Titan, Hunter, Warlock), which is your favorite?</label>
+            <input id="class" type="text" name="class" placeholder="i.e. Titan" maxlength="7" minlength="5" required />
+          </li>
+          <li>
+            <label id="subclass">What is your favorite subclass of your favorite class?</label>
+            <input id="subclass" type="text" name="subclass" placeholder="i.e. Titan Defender" maxlength="25" minlength="5" required />
+          </li>
+          <li>
+            <label id="weapon-brand">Of the three major weapons foundaries in Destiny (Suros, H&auml;kke, Omolon), which one is your favorite?</label>
+            <input id="weapon-brand" type="text" name="weapon-brand" placeholder="i.e. Suros" required />
+          </li>
+          <li>
+            <label id="crucible">What's your favorite PvP game mode in the Crucible?</label>
+            <input id="crucible" type="text" name="crucible" placeholder="i.e. Control, Clash" required />
+          </li>
+        </ul>
+        <input type="submit" value="Submit" name="submit" />
+      </fieldset>
+    </form>   
+  </div> 
+</body>
+</html>
